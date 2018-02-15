@@ -216,6 +216,11 @@ class Renamer(threading.Thread):
 
     def replace(self, filename):
 
+        """
+        :param filename: string as 'FFI-129 TopHat GREEN_E3_5_00d00h00m'
+        :return: string as '129_1_E_03_2_2'
+        """
+
         if filename.startswith("FFI-"):
 
             first, second, third, fourth = filename.split("_")
