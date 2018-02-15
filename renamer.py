@@ -227,7 +227,7 @@ class Renamer(threading.Thread):
 
             # Replace ('green', 'red', ... ) by ('1', '2', '3')
             for i in self.dic_color.keys():
-                if first_3 == 0:
+                if first_3 == i:
                     first_3 = self.dic_color[i]
                     break
 
