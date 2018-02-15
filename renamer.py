@@ -169,7 +169,9 @@ class Renamer(threading.Thread):
     dic_color = {
         "GREEN": "1",
         "RED": "2",
-        "MASK": "3"
+        "MASKG": "3",
+        "MASKR": "4",
+        "MASKO": "5"
     }
 
     def __init__(self, dir_path, ui):
